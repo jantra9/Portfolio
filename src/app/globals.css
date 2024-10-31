@@ -19,9 +19,24 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.hover-border {
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent; /* Initial state */
+  transition: border-bottom 0.5s ease-in-out; /* Smooth transition */
+}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hover-border:hover {
+  
+  border-bottom-color: #991b1b; /* Changes on hover */
+}
+
+.button-contactme{
+  background-color: white;
+  color:black;
+}
+
+.button-contactme:hover{
+  background-color: #991b1b;
+  color:white;
+  transition: background-color 0.4s ease-in,color 0.4s ease-in;
 }

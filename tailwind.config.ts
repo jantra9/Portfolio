@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        salmon:"#fed8d8",
+        "darkSalmon":"#f49292",
       },
     },
   },
