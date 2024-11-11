@@ -13,7 +13,12 @@
     --foreground: #ededed;
   }
 }
-
+@font-face{
+  font-family: "Poppins";
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   color: var(--foreground);
   background: var(--background);
@@ -31,8 +36,8 @@ body {
 }
 
 .button-contactme{
-  background-color: white;
-  color:black;
+  background-color: #bb6868;
+  color:white;
 }
 
 .button-contactme:hover{

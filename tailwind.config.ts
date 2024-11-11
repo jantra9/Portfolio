@@ -12,7 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         salmon:"#fed8d8",
-        "darkSalmon":"#f49292",
+        "darkSalmon":"#bb6868",
+      },
+      boxShadow:{
+        "3-sided":"23px 20px 3px 0px rgba(0,0,0,0.15)",
+      },
+      fontFamily:{
+        custom:['Poppins', 'sans-serif']
+      },
+      backgroundImage: {
+        'custom-image': "url('../../public/bg.jpg')", 
       },
     },
   },
