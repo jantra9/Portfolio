@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFileDownload,FaPhoneAlt } from "react-icons/fa";
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from "next/font/google";
 import { MdEmail,MdLocationOn  } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 const montserrat = Montserrat({
@@ -12,10 +12,10 @@ const Resume = () => {
       <div className='font-custom'>
         <div className='text-4xl font-bold py-5 pl-[5%] xl:text-5xl'>Res<span className='border-b-[5px] border-darkSalmon lg:pb-2'>ume.</span></div>
         <div className="relative w-full flex items-center justify-center">
-          <div className="relative w-[100%] md:border sm:w-[90%] lg:h-[1500px] sm:my-10 max-w-[850px] md:shadow-3-sided text-black/[0.6]">
+          <div className="relative w-[100%] md:border sm:w-[90%] lg:h-[1400px] sm:my-10 max-w-[850px] md:shadow-3-sided text-black/[0.6]">
           <div className='absolute right-0 cursor-pointer text-pink-800'><FaFileDownload size={40}/></div>
           {/* This is the top part of resume */}
-            <div className='bg-salmon/[0.5] h-[15%] flex justify-between items-center px-[5%] py-5'>
+            <div className='bg-salmon/[0.5] h-[14%] flex justify-between items-center px-[5%] py-5'>
               <div className=''>
                 <div className={`text-lg sm:text-2xl md:text-4xl pb-2 md:font-semibold tracking-wider ${montserrat.className}`}>JANESSA TRAN</div>
                 <div className={`text-md md:text-2xl md:tracking-wider ${montserrat.className}`}>Fullstack developer</div>
@@ -28,7 +28,7 @@ const Resume = () => {
               </div>
             </div>
             {/* This is the second part of the resume - Profile and skills */}
-            <div className='px-[5%] pb-[20px] md:flex gap-16'>
+            <div className='px-[5%] pb-[20px] md:flex gap-14'>
                 {/* Profile */}
                 <div className='md:flex-[5]'>
                   <div className={`text-2xl tracking-widest font-bold pt-6 pb-3 ${montserrat.className}`}>Profile</div>
@@ -94,8 +94,8 @@ const Resume = () => {
                       <li>Team Collaboration: Worked with healthcare teams to ensure cohesive patient care.</li>
                       <li>Effective Communication: Maintained clear and compassionate communication with patients and families.</li>
                       <li>Training and Support: Provided guidance and support to patients, their families, and junior nurses.</li>
-                      <li>Documentation: Created detailed care documentation, similar to writing clear and comprehensive technical documentation for development projects.</li>
-                      <li>Learning & Adaptability: Developed a strong capacity for learning complex medical procedures and adapting to fast-changing conditions.</li>
+                      <li>Documentation: Created detailed care documentation.</li>
+                      <li>Learning & Adaptability: Developed a strong capacity for learning complex procedures and adapting to fast-changing conditions.</li>
                     </ul>
                   </li>
                 </ul>

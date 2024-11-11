@@ -1,4 +1,5 @@
 'use client'
+import Loader from './Loader/Loader';
 import React, { useEffect, useRef, useState } from 'react';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { Canvas, useFrame } from '@react-three/fiber';
@@ -33,7 +34,7 @@ const LanguagesIcon = () => {
         });
     }, []);
     if (isLoading) {
-      return <div className="text-center">Loading textures...</div>;
+      return <div className="flex justify-center py-5"><Loader /></div>;
     }
     return (
         <div className='flex justify-center items-center mb-5'>

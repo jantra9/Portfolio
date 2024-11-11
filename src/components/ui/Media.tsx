@@ -8,9 +8,9 @@ interface MediaProps{
 }
 const Media:React.FC<MediaProps> = ({color}) => {
     const media=[
-        {link:"#",icon:<FaLinkedin size={30}/>},
-        {link:"#",icon:<FaGithub size={30} />},
-        {link:"#",icon:<BiLogoGmail size={30} />}
+        {link:"#",icon:<FaLinkedin size={35}/>},
+        {link:"#",icon:<FaGithub size={35} />},
+        {link:"#",icon:<BiLogoGmail size={35} />}
       ]
   return (
     <div className=" flex gap-7">
