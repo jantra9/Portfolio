@@ -8,14 +8,20 @@ interface MediaProps{
 }
 const Media:React.FC<MediaProps> = ({color}) => {
     const media=[
-        {link:"#",icon:<FaLinkedin size={35}/>},
-        {link:"#",icon:<FaGithub size={35} />},
-        {link:"#",icon:<BiLogoGmail size={35} />}
+        {link:"https://www.linkedin.com/in/janessa-tran-b01301171/",icon:<FaLinkedin size={35}/>},
+        {link:"https://github.com/jantra9",icon:<FaGithub size={35} />},
+        {link:"janetran251@gmail.com",icon:<BiLogoGmail size={35} />}
       ]
   return (
     <div className=" flex gap-7">
         {media.map((item,index)=>(
-            <Link href={item.link} key={index} className="">{React.cloneElement(item.icon, { color })}</Link>
+            <Link 
+            href={item.link} 
+            rel="noopener noreferrer" 
+            target="_blank"
+            key={index} 
+            className="">
+                {React.cloneElement(item.icon, { color })}</Link>
         ))}
     </div>
   )
