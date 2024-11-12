@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        salmon:"#fed8d8",
+        salmon:"#DECCCF",
         "darkSalmon":"#bb6868",
       },
       boxShadow:{
@@ -21,7 +21,7 @@ const config: Config = {
         custom:['Poppins', 'sans-serif']
       },
       backgroundImage: {
-        'custom-image': "url('../../public/bg.jpg')", 
+        'custom-image': "url('../../public/dialog-container.png')", 
       },
     },
   },

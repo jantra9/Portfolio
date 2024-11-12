@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation/Navigation'
 import AboutMe from '@/components/sections/AboutMe'
+import Contact from '@/components/sections/Contact'
 import Languages from '@/components/sections/Languages'
 import Projects from '@/components/sections/Projects'
 import Resume from '@/components/sections/Resume'
@@ -20,6 +21,9 @@ const Home = () => {
         </section>
         <section id='resume'>
             <Resume />
+        </section>
+        <section id='contact'>
+          <Contact />
         </section>
     </div>
   )

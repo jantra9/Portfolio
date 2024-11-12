@@ -12,7 +12,7 @@ const Resume = () => {
       <div className='font-custom'>
         <div className='text-4xl font-bold py-5 pl-[5%] xl:text-5xl'>Res<span className='border-b-[5px] border-darkSalmon lg:pb-2'>ume.</span></div>
         <div className="relative w-full flex items-center justify-center">
-          <div className="relative w-[100%] md:border sm:w-[90%] lg:h-[1400px] sm:my-10 max-w-[850px] md:shadow-3-sided text-black/[0.6]">
+          <div className="relative w-[100%] md:border sm:w-[90%] lg:h-[1250px] sm:my-10 max-w-[930px] md:shadow-3-sided text-black/[0.6]">
           <div className='absolute right-0 cursor-pointer text-pink-800'><FaFileDownload size={40}/></div>
           {/* This is the top part of resume */}
             <div className='bg-salmon/[0.5] h-[14%] flex justify-between items-center px-[5%] py-5'>
@@ -28,7 +28,7 @@ const Resume = () => {
               </div>
             </div>
             {/* This is the second part of the resume - Profile and skills */}
-            <div className='px-[5%] pb-[20px] md:flex gap-14'>
+            <div className='px-[5%] pb-[20px] md:flex gap-12'>
                 {/* Profile */}
                 <div className='md:flex-[5]'>
                   <div className={`text-2xl tracking-widest font-bold pt-6 pb-3 ${montserrat.className}`}>Profile</div>
@@ -46,7 +46,7 @@ const Resume = () => {
             </div>
             <div className='w-full bg-gray-200 h-[2px]'></div>
             {/* This is wrapper of work exp anad skills */}
-            <div className='px-[5%] pb-[20px] md:flex gap-16'>
+            <div className='px-[5%] pb-[20px] md:flex gap-10'>
               {/* This is exp */}
               <div>
                 <div className={`text-2xl tracking-widest font-bold pt-6  ${montserrat.className}`}>Work Experience</div>
@@ -77,7 +77,6 @@ const Resume = () => {
                     <ul className='pl-7 list-disc text-sm'>
                       <li>Teamwork: collaborate with multiple parties including health professionals, service providers to coordinate and meet clients’ needs</li>
                       <li>Problem-Solving: Addressed complex patient issues with innovative solutions</li>
-                      <li>Care Coordination: Developed and implemented personalized care plans.</li>
                       <li>Data Management: Managed patient records with accuracy and confidentiality..</li>
                       <li>Quality Assurance: Monitored patient progress and adjusted care plans.</li>
                     </ul>
@@ -94,7 +93,6 @@ const Resume = () => {
                       <li>Team Collaboration: Worked with healthcare teams to ensure cohesive patient care.</li>
                       <li>Effective Communication: Maintained clear and compassionate communication with patients and families.</li>
                       <li>Training and Support: Provided guidance and support to patients, their families, and junior nurses.</li>
-                      <li>Documentation: Created detailed care documentation.</li>
                       <li>Learning & Adaptability: Developed a strong capacity for learning complex procedures and adapting to fast-changing conditions.</li>
                     </ul>
                   </li>

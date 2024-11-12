@@ -5,11 +5,11 @@ import LanguagesIcon from "@/components/ui/LanguagesIcon";
 import Media from "@/components/ui/Media";
 const AboutMe = () => {
   return (
-    <div className="w-full relative flex flex-col lg:flex-row justify-center items-center font-custom xl:py-16 ">
+    <div className="w-full relative flex flex-col lg:flex-row justify-center items-center font-custom xl:py-20 ">
     {/* This group the text and image together */}
         <div className='lg:flex-[5] lg:ml-[5%]'>
             <div className="mx-5">
-                <div className="text-2xl xl:text-4xl 2xl:text-5xl">
+                <div className="text-2xl xl:text-4xl 2xl:text-5xl pt-10">
                     Hi, I'm Janessa
                 </div>
                 <div className="text-5xl xl:text-7xl font-extrabold pr-10 py-3 lg:pr-0"><span className="text-darkSalmon">Full</span>stack developer</div>
@@ -30,7 +30,7 @@ const AboutMe = () => {
         </div>
         {/* This is the image */}
         <div className="relative w-full flex justify-center items-center my-10 lg:flex-[4] lg:pr-16 xl:pr-24 h-full ">
-            <div className="group relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[400px] 2xl:h-[400px] rounded-full bg-gradient-to-b from-darkSalmon to-black p-[5px]">
+            <div className="group relative w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[390px] 2xl:h-[390px] rounded-full bg-gradient-to-b from-darkSalmon to-black p-[5px]">
                 <div className="relative w-full h-full rounded-full bg-white p-[2px] transition group-hover:bg-opacity-0">
                     <Image
                         src="/profile-picture.jpg"
