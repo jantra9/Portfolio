@@ -22,21 +22,21 @@ const Navigation = () => {
   const menu = [
     { label: 'About Me', path: '#aboutme' },
     { label: 'Projects', path: '#projects' },
-    { label: 'Contact', path: '#contact' },
     { label: 'Resume', path: '#resume' },
+    { label: 'Contact', path: '#contact' },
   ];
   return (
     <div className='relative'>
 
       {/* For mobile phone */}
       <div className='lg:hidden sm:flex md:flex flex-col '>
-          <div className='w-full flex justify-end bg-white'>
+          <div className='w-full flex justify-end bg-salmon border-b-2'>
             <button className='p-5'>
               {isOpen===false? <CiMenuFries size={40} onClick={toggle} />
               :<IoCloseOutline size={40} color='black' onClick={()=>setIsOpen(false)} />}
             </button>
           </div>
-          {isOpen && <div ref={menuRef} className='absolute inset-0 top-[50px] h-[230px] bg-white left-0 flex flex-col gap-5 py-4 z-40  transition-[max-height] duration-500 ease-in-out'>
+          {isOpen && <div ref={menuRef} className='absolute inset-0 bg-salmon top-[50px] h-[230px] bg-white left-0 flex flex-col gap-5 py-4 z-40  transition-[max-height] duration-500 ease-in-out'>
             {menu.map((item)=>(
               <li key={item.label} className='list-none w-full flex justify-center text-2xl'>
                 <Link 
