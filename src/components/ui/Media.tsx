@@ -10,7 +10,7 @@ const Media:React.FC<MediaProps> = ({color}) => {
     const media=[
         {link:"https://www.linkedin.com/in/janessa-tran-b01301171/",icon:<FaLinkedin size={35}/>},
         {link:"https://github.com/jantra9",icon:<FaGithub size={35} />},
-        {link:"janetran251@gmail.com",icon:<BiLogoGmail size={35} />}
+        {link:"mailto:janetran251@gmail.com",icon:<BiLogoGmail size={35} />}
       ]
   return (
     <div className=" flex gap-7">

@@ -38,7 +38,7 @@ const LanguagesIcon = () => {
     }
     return (
         <div className='flex justify-center items-center mb-5'>
-          <div className='grid grid-cols-3 gap-2 bg-white lg:grid-cols-5'>
+          <div className='grid grid-cols-3 gap-2 bg-white'>
                 {Object.values(textures).map((texture, index) => (
               <div key={index} className="h-[100px] w-[100px] lg:w-[150px] lg:h-[150px]">
                 <Canvas camera={{ position: [0,0,3], fov: 60 }}>

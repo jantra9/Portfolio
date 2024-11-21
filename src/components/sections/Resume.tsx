@@ -13,7 +13,9 @@ const Resume = () => {
         <div className='text-4xl font-bold py-5 pl-[5%] xl:text-5xl'>Res<span className='border-b-[5px] border-darkSalmon lg:pb-2'>ume.</span></div>
         <div className="relative w-full flex items-center justify-center">
           <div className="relative w-[100%] md:border sm:w-[90%] lg:h-[1250px] sm:my-10 max-w-[930px] md:shadow-3-sided text-black/[0.6]">
-          <div className='absolute right-0 cursor-pointer text-pink-800'><FaFileDownload size={40}/></div>
+          <div className='absolute right-0 cursor-pointer text-pink-800'><a href="/Resume.pdf" download="Janessa Tran Resume" title='Download'>
+            <FaFileDownload size={40}/>
+          </a></div>
           {/* This is the top part of resume */}
             <div className='bg-salmon/[0.5] h-[14%] flex justify-between items-center px-[5%] py-5'>
               <div className=''>
@@ -22,7 +24,7 @@ const Resume = () => {
               </div>
               <div className='text-sm leading-7'>
                 <p className='flex items-center gap-2'><span><FaPhoneAlt size='1rem' /></span>0404 291 198</p>
-                <p className='flex items-center gap-2'><span><TbWorld size='1rem'/></span>http://website.com</p>
+                <p className='flex items-center gap-2'><span><TbWorld size='1rem'/></span>http://github.com/jantra9.com</p>
                 <p className='flex items-center gap-2'><span><MdEmail size='1rem'/></span>janetran251@gmail.com</p>
                 <p className='flex items-center gap-2'><span><MdLocationOn size='1rem'/></span>Melbourne, Victoria</p>
               </div>

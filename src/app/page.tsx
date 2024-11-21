@@ -1,17 +1,17 @@
 import Navigation from '@/components/Navigation/Navigation'
-import AboutMe from '@/components/sections/AboutMe'
+import Home from '@/components/sections/Home'
 import Contact from '@/components/sections/Contact'
 import Languages from '@/components/sections/Languages'
 import Projects from '@/components/sections/Projects'
 import Resume from '@/components/sections/Resume'
 import React from 'react'
 
-const Home = () => {
+const Page = () => {
   return (
     <div>
         <Navigation />
-        <section id='aboutme'>
-            <AboutMe />
+        <section id='home'>
+            <Home />
         </section>
         <section>
           <Languages />
@@ -29,4 +29,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Page

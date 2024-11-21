@@ -20,10 +20,10 @@ const Navigation = () => {
     }
   },[])
   const menu = [
-    { label: 'About Me', path: '#aboutme' },
+    { label: 'Home', path: '#home' },
     { label: 'Projects', path: '#projects' },
     { label: 'Resume', path: '#resume' },
-    { label: 'Contact', path: '#contact' },
+    { label: 'About Me', path: '#aboutme' },
   ];
   return (
     <div className='relative'>
@@ -36,7 +36,7 @@ const Navigation = () => {
               :<IoCloseOutline size={40} color='black' onClick={()=>setIsOpen(false)} />}
             </button>
           </div>
-          {isOpen && <div ref={menuRef} className='absolute inset-0 bg-salmon top-[50px] h-[230px] bg-white left-0 flex flex-col gap-5 py-4 z-40  transition-[max-height] duration-500 ease-in-out'>
+          {isOpen && <div ref={menuRef} className='absolute inset-0 bg-salmon top-[50px] h-[230px] left-0 flex flex-col gap-5 py-4 z-40  transition-[max-height] duration-500 ease-in-out'>
             {menu.map((item)=>(
               <li key={item.label} className='list-none w-full flex justify-center text-2xl'>
                 <Link 
