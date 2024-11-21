@@ -1,4 +1,4 @@
-import Navigation from '@/components/Navigation/Navigation'
+import Navigation from '@/components/ui/Navigation'
 import Home from '@/components/sections/Home'
 import Contact from '@/components/sections/Contact'
 import Languages from '@/components/sections/Languages'

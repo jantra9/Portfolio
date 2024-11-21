@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCopyright } from "react-icons/fa";
-import Media from '../ui/Media';
+import Media from './Media';
 const Footer = () => {
   return (
     <div className='bg-black h-[100px] px-[3vw] text-white flex items-center justify-between'>
