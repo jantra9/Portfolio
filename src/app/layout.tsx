@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import Head from "next/head";
 
 export const metadata: Metadata = {
-  title: "Janessa Tran - Fullstack Developer Portfolio",
+  title: "Janessa Bao Tran - Fullstack Developer Portfolio",
   description: "Explore my portfolio showcasing skills in web development, and projects built with Next.js and React.",
   keywords:[
     "next.js",
@@ -13,17 +13,17 @@ export const metadata: Metadata = {
     "fullstack"
   ],
   openGraph:{
-    siteName:"Portfolio | Janessa Tran",
+    siteName:"Portfolio | Janessa Bao Tran",
     type:"website",
     locale:"en_US",
-    title:"Janessa Tran - Fullstack Developer Portfolio",
+    title:"Janessa Bao Tran - Fullstack Developer Portfolio",
     description:"Explore my portfolio showcasing skills in web development, and projects built with Next.js and React.",
     images: [
       {
         url: "/image.jpg",
         width: 1200,
         height: 630,
-        alt: "Portfolio Preview of Janessa Tran",
+        alt: "Portfolio Preview of Janessa Bao Tran",
       },
     ],
   },
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "max-video-preview":-1,
     googleBot:"index, follow"
   },
-  applicationName:"Portfolio | Janessa Tran",
+  applicationName:"Portfolio | Janessa Bao Tran",
 };
 export const viewport = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0";
 
