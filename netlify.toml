@@ -1,12 +1,6 @@
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build]
-  command = "npm run build"
-  publish = ".next"  # Default build folder for Next.js
-
-  [build.environment]
-    NODE_ENV = "production"
-
-  [[plugins]]
-    package = "@netlify/plugin-nextjs"
-
-  [build.cache]
-    directories = ["node_modules", ".next/cache"]
+  # Netlify's default behavior is to use `next build` under the hood,
+  # so you do not need to specify the build command manually unless you have a custom one.

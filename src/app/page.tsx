@@ -1,9 +1,9 @@
-import Navigation from '@/components/ui/Navigation'
-import Home from '@/components/sections/Home'
-import Contact from '@/components/sections/Contact'
-import Languages from '@/components/sections/Languages'
-import Projects from '@/components/sections/Projects'
-import Resume from '@/components/sections/Resume'
+import Navigation from '../components/ui/Navigation'
+import Home from '../components/sections/Home'
+import Contact from '../components/sections/Contact'
+import Languages from '../components/sections/Languages'
+import Projects from '../components/sections/Projects'
+import Resume from '../components/sections/Resume'
 import React from 'react'
 
 const Page = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
-import Media from "@/components/ui/Media";
+import Media from '../ui/Media';
 const Home = () => {
   return (
     <div className="w-full relative flex flex-col lg:flex-row justify-center items-center font-custom md:py-20 xl:py-28 ">
