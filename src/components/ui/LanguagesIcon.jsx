@@ -4,34 +4,28 @@ import React, { useEffect, useRef, useState } from 'react';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { Canvas, useFrame } from '@react-three/fiber';
 const texturePaths = {
-  HTML: 'languages/HTML.png',
-  CSS: 'languages/CSS.png',
-  JS: 'languages/JS.png',
-  TS: 'languages/TS.png',
-  NEXT: 'languages/NEXT.png',
-  REACT: 'languages/REACT.png',
-  REACTNATIVE:"languages/REACTNATIVE.png",
-  NODE: 'languages/NODE.png',
-  TAILWIND: 'languages/TAILWIND.png',
+  JS: '/languages/JS.png',
+  HTML: '/languages/HTML.png',
+  CSS: '/languages/CSS.png',
+  TS: '/languages/TS.png',
+  NEXT: '/languages/NEXT.png',
+  REACT: '/languages/REACT.png',
+  REACTNATIVE:"/languages/REACTNATIVE.png",
+  NODE: '/languages/NODE.png',
+  TAILWIND: '/languages/TAILWIND.png',
 };
 const LanguagesIcon = () => {
     const [textures, setTextures] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
-        const loader = new TextureLoader();
-        const texturePromises = Object.entries(texturePaths).map(([key, path]) =>
-          loader.loadAsync(path).then((texture) => [key, texture])
-        );
-    
-        Promise.all(texturePromises)
-          .then((loadedTextures) => {
-            const textureObject = Object.fromEntries(loadedTextures);
-            setTextures(textureObject);
-            setIsLoading(false);
-        })
-        .catch((error) => {
-            console.error("Error loading textures", error);
-        });
+      const loader = new TextureLoader();
+      const loadedTextures = Object.fromEntries(
+        Object.entries(texturePaths).map(([key, path]) => [
+          key, loader.load(path)
+        ])
+      );
+      setTextures(loadedTextures);
+      setIsLoading(false);
     }, []);
     if (isLoading) {
       return <div className="flex justify-center py-5"><Loader /></div>;

@@ -23,6 +23,7 @@ const config: Config = {
       backgroundImage: {
         'custom-image': "url('../../public/dialog-container.png')", 
       },
+      
     },
   },
   plugins: [],
