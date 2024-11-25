@@ -15,7 +15,7 @@ const texturePaths = {
   TAILWIND: 'languages/TAILWIND.png',
 };
 const LanguagesIcon = () => {
-    const [textures, setTextures] = useState({ JS: null, HTML: null });
+    const [textures, setTextures] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         const loader = new TextureLoader();
