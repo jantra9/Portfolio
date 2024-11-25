@@ -4,9 +4,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import { TextureLoader } from 'three/src/loaders/TextureLoader';
 import { Canvas, useFrame } from '@react-three/fiber';
 const texturePaths = {
-  JS: 'languages/JS.png',
   HTML: 'languages/HTML.png',
   CSS: 'languages/CSS.png',
+  JS: 'languages/JS.png',
   TS: 'languages/TS.png',
   NEXT: 'languages/NEXT.png',
   REACT: 'languages/REACT.png',

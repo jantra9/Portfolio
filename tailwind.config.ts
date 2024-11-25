@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        salmon:"#DECCCF",
+        salmon:"#dcbcbc",
         "darkSalmon":"#bb6868",
       },
       boxShadow:{

@@ -42,7 +42,7 @@ const Projects = () => {
           <Swiper 
           pagination={true} 
           loop={true} 
-          modules={[Pagination]} className="w-full h-[430px] md:h-[600px] lg:h-[650px] xl:h-[830px] pb-7">
+          modules={[Pagination]} className="w-full h-[460px] md:h-[600px] lg:h-[650px] xl:h-[830px] 2xl:h-[880px] pb-7">
               {videoSlides.map((slide, index) => (
                 <SwiperSlide key={index} className='w-full !flex justify-center flex-col '>
                   <video 

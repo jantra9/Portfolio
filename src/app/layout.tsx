@@ -55,6 +55,7 @@ export default function RootLayout({
   };
   return (
     <html lang="en">
+      <script src="//code.tidio.co/nfufuz0bigfnbymw6k7vdsjn8mcrjkpz.js" async></script>
       <body>
         <Head>
         <meta name="mobile-web-app-capable" content="yes" />
