@@ -19,13 +19,24 @@ const LanguagesIcon = () => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
       const loader = new TextureLoader();
-      const loadedTextures = Object.fromEntries(
-        Object.entries(texturePaths).map(([key, path]) => [
-          key, loader.load(path)
-        ])
-      );
-      setTextures(loadedTextures);
-      setIsLoading(false);
+      const loadedTextures = {};
+    
+      Object.entries(texturePaths).forEach(([key, path]) => {
+        loader.load(
+          path,
+          (texture) => {
+            loadedTextures[key] = texture;
+            if (Object.keys(loadedTextures).length === Object.keys(texturePaths).length) {
+              setTextures(loadedTextures);
+              setIsLoading(false);
+            }
+          },
+          undefined, // onProgress callback (optional)
+          (error) => {
+            console.error('Error loading texture:', error);
+          }
+        );
+      });
     }, []);
     if (isLoading) {
       return <div className="flex justify-center py-5"><Loader /></div>;

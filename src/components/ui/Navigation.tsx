@@ -23,7 +23,7 @@ const Navigation = () => {
     { label: 'Home', path: '#home' },
     { label: 'Projects', path: '#projects' },
     { label: 'Resume', path: '#resume' },
-    { label: 'About Me', path: '#aboutme' },
+    { label: 'Contact', path: '#contact' },
   ];
   return (
     <div className='relative'>
